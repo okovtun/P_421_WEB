@@ -2,4 +2,4 @@
 https://www.youtube.com/playlist?list=PLYdRabXTIiy0
 
 TODO:
-Выучить теорию.
+Теория по системам счисления НАИЗУСТЬ!!!.
