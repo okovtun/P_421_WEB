@@ -8,30 +8,31 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<style>
-				/*
+		/*
 			CSS - Cascade Style Sheet (Каскадные таблицы стилей)
 			style
 		*/
-				body
-				{
-					font-size: 24px;
-					font-family: Roboto Condensed;
-					/*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
-				}
+		body
+		{
+			font-size: 24px;
+			font-family: Roboto Condensed;
+			/*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+		}
 
-				p
-				{
-					text-align: justify;
-				}
+		p
+		{
+			text-align: justify;
+		}
 
 		figure
 		{
-			text-align:center;
+			text-align: center;
 		}
+
 		figcaption
 		{
-			font-style:italic;
-			font-weight:300;
+			font-style: italic;
+			font-weight: 300;
 		}
 	</style>
 </head>
@@ -51,6 +52,41 @@
 		Ну и традиционное предупреждение: если иное не указано явно, то слово «процессор» в данном материале обозначает «x86(-64) процессор, предназначенный для установки в десктопы или (намного реже) мобильные компьютеры». Серверные процессоры, специализированные процессоры с архитектурой x86, всевозможные embedded-варианты — всё это в рамках статьи не рассматривается.
 	</p>
 	<h2>Оглавление</h2>
+	<ol>
+		<li>
+			Введение
+			<ul>
+				<li>Общее устройство вычислительной машины</li>
+				<li>Код и данные: основной принцип работы процессора</li>
+			</ul>
+		</li>
+		<li>Общие принципы взаимодействия процессора и ОЗУ
+			<ul>
+				<li>Контроллер памяти</li>
+				<li>Процессорная шина</li>
+				<li>Оперативная память
+					<ul>
+						<li>Разрадность шины памяти, N-канальные контроллеры памяти</li>
+						<li>Скорость чтения/записи</li>
+						<li>Латентность</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>Процессор: сведения общего характера
+			<ul>
+				<li>Понятие Архитектуры
+					<ul>
+						<li>Архитектура как совместимость с кодом</li>
+						<li>Архитектура как хороктеристика семейства процессоров</li>
+						<li>64-битные расширения классической x86 (IA-32) Архитектуры</li>
+					</ul>
+				</li>
+				<li>Процессорное ядро</li>
+				<li>Виртуализация</li>
+			</ul>
+		</li>
+	</ol>
 	<h2>Введение</h2>
 	<h3>Общее устройство вычислительной машины</h3>
 	<p>
