@@ -2,6 +2,7 @@
 			CSS - Cascade Style Sheet (Каскадные таблицы стилей)
 			style
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body
 {
 	font-size: 24px;
