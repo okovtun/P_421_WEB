@@ -48,3 +48,19 @@ figcaption
 	padding-top:32px;
 	padding-bottom:32px;*/
 }
+dl
+{
+	color:gray;
+	font-weight:200;
+}
+dt
+{
+	float:left;/*обтекание такстом*/
+	font-weight:400;
+	width:128px;
+}
+dd
+{
+	margin-left:128px;
+	border:solid 0px;
+}
