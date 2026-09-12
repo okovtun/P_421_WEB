@@ -7,6 +7,8 @@ TODO:
 	https://www.intel.com/content/www/us/en/products/sku/237504/intel-core-i9-processor-14900ks-36m-cache-up-to-6-20-ghz/specifications.html
 3. Сверстать таблицу Менделеева;
 
+Колодина Алина Васильевна, HTML5/CSS3 - 12
+
 DONE:
 Добить статью до конца, все кроме таблиц;
 
