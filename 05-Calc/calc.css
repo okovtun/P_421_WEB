@@ -114,6 +114,12 @@
 								rgb(220, 177, 157)
 		);
 	}
+	.close-button:active
+	{
+		background-image:none;
+		background-color: rgb(220, 77, 57);
+		box-shadow: inset -2px -1px 8px 0px #DD4444, inset 2px 1px 8px 0px #770000;
+	}
 .control-button-signature
 {
 	margin-left:-5px;
