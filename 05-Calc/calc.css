@@ -1,132 +1,131 @@
 ﻿body
 {
-	background-image:url("img/bliss.jpg");
-	background-size:cover;
+	background-image: url("img/bliss.jpg");
+	background-size: cover;
 }
+
 .main-window
 {
 	/*border:solid 1px;*/
-	width:400px;
-	height:300px;
+	width: 400px;
+	height: 300px;
 }
+
 .title-bar
 {
-	height:38px;
+	height: 38px;
 	/*background-color:blue;*/
-	color:white;
-
-	font-family:Tahoma;
-
-	display:flex;
-	justify-content:space-between;	/*Выравнивание по горизонтали*/
-	align-items:center;	/*Выравнивание по вертикали	*/
+	color: white;
+	font-family: Tahoma;
+	display: flex;
+	justify-content: space-between; /*Выравнивание по горизонтали*/
+	align-items: center; /*Выравнивание по вертикали	*/
 	padding: 0px 5px;
-
-	border-top-left-radius:8px;
-	border-top-right-radius:8px;
-
-	background-image:linear-gradient(to bottom,
-		rgb(50, 140, 250),
-		rgb(50, 140, 250),
-		rgb(3, 92, 230), 
-		rgb(3, 92, 230), 
-		rgb(3, 92, 230), 
-		rgb(3, 92, 230), 
-		rgb(4, 107, 255),
-		rgb(4, 107, 255),
-		rgb(4, 107, 255),
-		rgb(4, 107, 255)
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background-image: linear-gradient(to bottom, 
+						rgb(50, 140, 250), 
+						rgb(50, 140, 250), 
+						rgb(3, 92, 230), 
+						rgb(3, 92, 230), 
+						rgb(3, 92, 230), 
+						rgb(3, 92, 230), 
+						rgb(4, 107, 255), 
+						rgb(4, 107, 255), 
+						rgb(4, 107, 255), 
+						rgb(4, 107, 255)
 	);
-	box-shadow:inset -2px 0px 8px 0px darkblue;
+	box-shadow: inset -2px 0px 8px 0px darkblue;
 }
+
 .iconsm
 {
-	width:28px;
-	height:28px;
+	width: 28px;
+	height: 28px;
 }
+
 .icon-and-title
 {
-	display:flex;
-	align-items:center;
+	display: flex;
+	align-items: center;
 }
+
 .title-bar-window-control-buttons
 {
 	padding: 0px 3px;
 	/*width: 104px;*/
-	padding:1px;
+	padding: 1px;
 }
-.title-bar-window-control-buttons/*, .control-button*/
+
+.title-bar-window-control-buttons /*, .control-button*/
 {
-	display:flex;
-	justify-content:center;
-	align-items:center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	/*padding-top:4px;*/
 	/*border-bottom:solid 1px;*/
 }
+
 .control-button
 {
-	width:28px;
-	height:28px;
-	font-size:24px;
+	width: 28px;
+	height: 28px;
+	font-size: 24px;
 	/*padding:-5px 2px;*/
-	margin:0px 2px;
-
-	border:solid 1px;
-	border-radius:4px;
-
+	margin: 0px 2px;
+	border: solid 1px;
+	border-radius: 4px;
 	background-color: rgb(39, 104, 250);
-	color:white;
-
-	box-shadow:inset 3px 2px 8px 0px #55AAFF, inset -2px -1px 5px 0px #0000BB;
+	color: white;
+	box-shadow: inset 3px 2px 8px 0px #55AAFF, inset -2px -1px 5px 0px #0000BB;
 }
+
 	.control-button:hover
 	{
-		background-image: linear-gradient(to bottom right, 
-							rgb(189, 189, 249),
-							rgb(39, 104, 249),
-							rgb(149, 149, 249)
-		);
+		background-image: linear-gradient(to bottom right, rgb(189, 189, 249), rgb(39, 104, 249), rgb(149, 149, 249) );
 	}
+
 	.control-button[disabled], .control-button[disabled]:hover
 	{
-		color:#CCCCEE;
-		background-image:none;
-		background-color:rgb(39,104,249);
+		color: #CCCCEE;
+		background-image: none;
+		background-color: rgb(39,104,249);
 		box-shadow: inset 3px 1px 7px 0px #2288FF;
 	}
+
 	.control-button:active
 	{
-		background-image:none;
-		background-color:rgb(50, 50,200);
-		box-shadow:	inset -3px -1px 7px 0px #2288FF,
-					inset 4px 2px 5px 0px #000088;
+		background-image: none;
+		background-color: rgb(50, 50,200);
+		box-shadow: inset -3px -1px 7px 0px #2288FF, inset 4px 2px 5px 0px #000088;
 	}
+
 .close-button
 {
-	background-color:rgb(220, 77, 57);
-	box-shadow:inset 2px 1px 8px 0px #FFBBBB, inset -2px -1px 5px 0px #770000;
+	background-color: rgb(220, 77, 57);
+	box-shadow: inset 2px 1px 8px 0px #FFBBBB, inset -2px -1px 5px 0px #770000;
 }
+
 	.close-button:hover
 	{
-		background-image:linear-gradient(to bottom right, 
-								rgb(220, 177, 157),
-								rgb(255, 77, 57),
-								rgb(220, 177, 157)
-		);
+		background-image: linear-gradient(to bottom right, rgb(220, 177, 157), rgb(255, 77, 57), rgb(220, 177, 157) );
 	}
+
 	.close-button:active
 	{
-		background-image:none;
+		background-image: none;
 		background-color: rgb(220, 77, 57);
 		box-shadow: inset -2px -1px 8px 0px #DD4444, inset 2px 1px 8px 0px #770000;
 	}
+
 .control-button-signature
 {
-	margin-left:-5px;
-	margin-top:-8px;
+	margin-left: -5px;
+	margin-top: -8px;
 	/*margin:-5px;*/
 	/*background-color:transparent;*/
 }
+
 .close-button-signature
 {
 	margin: -5px 0 0 -3px;
@@ -134,18 +133,41 @@
 /**********************			Client area:		**********************/
 .client-frame
 {
-	height:261px;
-	background-color:white;
-	display:flex;
-	justify-content:center;
-
-	box-shadow:inset -2px 0px 5px 5px darkblue;
+	height: 261px;
+	background-color: rgb(4, 177, 255);
+	display: flex;
+	justify-content: center;
+	box-shadow: inset -2px 0px 5px 4px darkblue;
 }
+
 .client-rect
 {
 	/*background-color:rgb(235, 233, 216);*/
-	background-color:#EAE8D8;
-	width:390px;
-	height:256px;
-	box-shadow:0px 0px 2px 1px darkblue;
+	background-color: #EAE8D8;
+	width: 390px;
+	height: 256px;
+	box-shadow: 0px 0px 2px 1px darkblue,2px 0px 3px 0px rgb(4, 177, 255);
 }
+
+.menu-bar
+{
+	border-bottom: solid 1px white;
+}
+
+	.menu-bar > button
+	{
+		border: none;
+		background-color: #EAE8D8;
+	}
+
+		.menu-bar > button:hover
+		{
+			background-color: #F5F5F5;
+			box-shadow:1px 1px 0px 0px gray;
+		}
+
+		.menu-bar > button:active
+		{
+			background-color: #BAB8A8;
+			box-shadow:-1px -1px 0px 0px gray;
+		}
