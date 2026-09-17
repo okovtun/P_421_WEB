@@ -2,6 +2,9 @@
 https://www.youtube.com/playlist?list=PLYdRabXTIiy0
 
 TODO:
+Пока учим теорию.
+
+DONE:
 1. Добить статью до конца;
 2. Под Таблицей-1 добавить еще один список определений с маркировкой Процессоров:
 	https://www.intel.com/content/www/us/en/products/sku/237504/intel-core-i9-processor-14900ks-36m-cache-up-to-6-20-ghz/specifications.html
