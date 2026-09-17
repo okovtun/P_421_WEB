@@ -2,6 +2,8 @@
 {
 	background-image: url("img/bliss.jpg");
 	background-size: cover;
+	display:flex;
+	justify-content:center;
 }
 
 .main-window
@@ -112,7 +114,11 @@
 
 	.close-button:hover
 	{
-		background-image: linear-gradient(to bottom right, rgb(220, 177, 157), rgb(255, 77, 57), rgb(220, 177, 157) );
+		background-image: linear-gradient(to bottom right, 
+							rgb(220, 177, 157), 
+							rgb(255, 77, 57), 
+							rgb(220, 177, 157)
+		);
 	}
 
 	.close-button:active
@@ -231,9 +237,23 @@
 }
 .buttons-container button
 {
-	color:blue;
-	font-size:17px;
+	color: blue;
+	/*background-color: rgb(250, 248, 246);*/
+	background-color: #FAF8F8;
+	font-size: 17px;
+	border: solid 1px darkblue;
+	border-radius: 5px;
+	box-shadow: inset 0px -2px 15px -10px gray;
 }
+	.buttons-container button:hover
+	{
+		background-color: white;
+	}
+	.buttons-container button:active
+	{
+		background-color: #E0E0E0;
+		box-shadow: inset 0px -2px 15px -5px darkgray;
+	}
 .buttons-container .memory-button, .buttons-container .operation-button, .clear-buttons>button
 {
 	color:red;
