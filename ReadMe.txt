@@ -4,7 +4,11 @@ https://www.youtube.com/playlist?list=PLYdRabXTIiy0
 TODO:
 1. Вывести на сраницу ряд Фибоначчи до указанного предела;
 2. Вывести на сраницу заданное количество чисел из ряда Фибоначчи;
-3. 
+3. Добавить страницу 'Geometry' и в ней вывести все фигуры из файла:
+	https://github.com/okovtun/P_421_WEB/blob/master/JavaScript/Geometria1.txt;
+4. Вывести на странцу Шахматную доску:
+	https://github.com/okovtun/P_421_WEB/blob/master/JavaScript/HardChess.jpg
+5. Вывести на страницу треугольник Паскаля;
 
 DONE:
 1. Добить статью до конца;
