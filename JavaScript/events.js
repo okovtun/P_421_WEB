@@ -36,8 +36,15 @@ function setColor(e)
 {
 	document.body.style[e.target.id === 'foreground-color' ? 'color' : 'backgroundColor'] = e.target.value;
 }
+
 document.addEventListener("mousemove", trackMouse);
 function trackMouse(e)
 {
 	document.getElementById("mouse-coords").innerHTML = `Mouse: X = ${e.clientX}, Y = ${e.clientY}`;
+}
+
+document.getElementById("switch-background").addEventListener("click", switchBackground);
+function switchBackground(e)
+{
+	document.body.className = document.body.className === 'dark' ? 'light' : 'dark';
 }
