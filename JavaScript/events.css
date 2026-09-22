@@ -13,12 +13,25 @@
 	{
 		margin:16px;
 	}
+	.header > div
+	{
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+	}
+	.header input
+	{
+		width:48px;
+		height:32px;
+	}
 #switch-background
 {
-	width:32px;
-	height:32px;
-	background-size:32px 32px;
+	--bg-size:48px;
+	width:var(--bg-size);
+	height:var(--bg-size);
+	background-size:var(--bg-size) var(--bg-size);
 	margin: 16px;
+	transition:3s;
 }
 .dark
 {
@@ -39,6 +52,11 @@
 	{
 		background-image:url('moon.png');
 	}
+body
+{
+	transition: color 3s, background-color 3s;
+}
+/*-------------------------------------------*/
 .factorial
 {
 	display:flex;
