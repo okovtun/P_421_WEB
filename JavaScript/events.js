@@ -227,6 +227,9 @@ function tickCountdown()
 	if (duration === 0)
 	{
 		let player = document.getElementById("player");
+		player.setAttribute("controls", "controls");
+		console.log(player.attributes);
+		console.log(typeof(player.attributes));
 		player.play();
 	}
 
