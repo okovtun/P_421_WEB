@@ -36,7 +36,7 @@ function inputDigit()
 	console.log(this);
 }
 
-document.onkeypress = function (e)
+/*document.onkeypress = function (e)
 {
 	console.log(e.key);
 	if (e.key >= 0 && e.key <= 9)
@@ -46,4 +46,19 @@ document.onkeypress = function (e)
 		console.log("DIGIT");
 	}
 	console.log(e);
+}*/
+
+document.onkeydown = function (e)
+{
+	console.log(e.key);
+	let button = document.getElementById(`${e.key}`);
+	button.classList.add("button-active");
+	//console.log(button.pseudo(":active"));
+	console.log(button);
+}
+document.onkeyup = function (e)
+{
+	let button = document.getElementById(`${e.key}`);
+	if (button.classList != null)
+		button.classList.remove("button-active");
 }

@@ -249,7 +249,7 @@
 	{
 		background-color: white;
 	}
-	.buttons-container button:active
+	.buttons-container button:active, .buttons-container .button-active
 	{
 		background-color: #E0E0E0;
 		box-shadow: inset 0px -2px 15px -5px darkgray;
