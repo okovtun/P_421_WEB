@@ -38,8 +38,13 @@ function inputDigit()
 }
 function digit2display(digit)
 {
+	console.log("digit2display");
+	console.log(digit);
+	console.log("------------------------------------");
 	let display = document.getElementById("display");
+	if (digit == ' ') return;
 	if (display.value === '0') display.value = '';
+	if (digit == '.' && display.value.includes('.')) return;
 	display.value += digit;
 	console.log(this);
 }
@@ -60,14 +65,31 @@ document.onkeydown = function (e)
 {
 	console.log(e.key);
 	let button = document.getElementById(`${e.key}`);
-	button.classList.add("button-active");
+	//alert(button);
+	if(button != null)button.classList.add("button-active");
 	//console.log(button.pseudo(":active"));
 	console.log(button);
+
+	switch (e.key)
+	{
+		case "Escape":	document.getElementById("C").classList.add("button-active");	break;
+		case "Enter":	document.getElementById("=").classList.add("button-active");	break;
+	}
 }
 document.onkeyup = function (e)
 {
 	let button = document.getElementById(`${e.key}`);
-	if (button.classList != null)
+	if (button != null && button.classList != null)
 		button.classList.remove("button-active");
-	digit2display(e.key);
+
+	switch (e.key)
+	{
+		case "Escape":
+			document.getElementById("C").classList.remove("button-active");
+			document.getElementById("display").value = "0";
+			break;
+		case "Enter":	document.getElementById("=").classList.remove("button-active");		break;
+	}
+	if(e.key >= 0 && e.key <= 9 || e.key == '.')
+		digit2display(e.key);
 }
