@@ -5,6 +5,11 @@ let buttons = document.getElementsByTagName("button");
 //console.log(buttons);
 //console.table(elemens);
 
+let a, b;	//Операнды
+let s;		//Sign - знак операции
+let input = false;
+let input_operation = false;
+
 let digitButtons = document.getElementsByClassName("digit-button");
 console.log(digitButtons);
 //for (let i = 0; i < digitButtons.length-1; i++)
@@ -38,6 +43,11 @@ function inputDigit()
 }
 function digit2display(digit)
 {
+	if (input_operation === true)
+	{
+		document.getElementById("display").value = "";
+		input_operation = false;
+	}
 	console.log("digit2display");
 	console.log(digit);
 	console.log("------------------------------------");
@@ -47,6 +57,7 @@ function digit2display(digit)
 	if (digit == '.' && display.value.includes('.')) return;
 	display.value += digit;
 	console.log(this);
+	input = true;
 }
 
 /*document.onkeypress = function (e)
@@ -89,7 +100,20 @@ document.onkeyup = function (e)
 			document.getElementById("C").classList.remove("button-active");
 			document.getElementById("display").value = "0";
 			break;
-		case "Enter":	document.getElementById("=").classList.remove("button-active");		break;
+		case "Enter":
+			Calculate();
+			document.getElementById("=").classList.remove("button-active");
+			break;
+
+		case "+":
+		case "-":
+		case "*":
+		case "/":
+			operation = e.key;
+			input = false;
+			input_operation = true;
+			a = Number(document.getElementById("display").value);
+			break;
 	}
 	if(e.key >= 0 && e.key <= 9 || e.key == '.')
 		digit2display(e.key);
@@ -99,4 +123,18 @@ function Backspace()
 	let display = document.getElementById("display");
 	if (display.value.length === 1) display.value = "0";
 	else display.value = display.value.substring(0, display.value.length - 1);
+}
+function Calculate()
+{
+	if(input)b = Number(document.getElementById("display").value);
+	switch (operation)
+	{
+		case "+": a += b; break;
+		case "-": a -= b; break;
+		case "*": a *= b; break;
+		case "/": a /= b; break;
+	}
+	input = false;
+	input_operation = false;
+	document.getElementById("display").value = a;
 }
