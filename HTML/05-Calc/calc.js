@@ -5,8 +5,8 @@ let buttons = document.getElementsByTagName("button");
 //console.log(buttons);
 //console.table(elemens);
 
-let a, b;	//Îïåğàíäû
-let s;		//Sign - çíàê îïåğàöèè
+let a = Number.MIN_VALUE, b = Number.MIN_VALUE;	//Îïåğàíäû
+let operation = "";		//Sign - çíàê îïåğàöèè
 let input = false;
 let input_operation = false;
 
@@ -97,8 +97,8 @@ document.onkeyup = function (e)
 	{
 		case "Backspace": Backspace();	 break;
 		case "Escape":
+			Clear();
 			document.getElementById("C").classList.remove("button-active");
-			document.getElementById("display").value = "0";
 			break;
 		case "Enter":
 			Calculate();
@@ -109,10 +109,11 @@ document.onkeyup = function (e)
 		case "-":
 		case "*":
 		case "/":
+			if(a === Number.MIN_VALUE)a = Number(document.getElementById("display").value);
+			//input = false;
+			if(input)Calculate();
 			operation = e.key;
-			input = false;
 			input_operation = true;
-			a = Number(document.getElementById("display").value);
 			break;
 	}
 	if(e.key >= 0 && e.key <= 9 || e.key == '.')
@@ -127,6 +128,7 @@ function Backspace()
 function Calculate()
 {
 	if(input)b = Number(document.getElementById("display").value);
+	input = false;
 	switch (operation)
 	{
 		case "+": a += b; break;
@@ -134,7 +136,14 @@ function Calculate()
 		case "*": a *= b; break;
 		case "/": a /= b; break;
 	}
-	input = false;
 	input_operation = false;
 	document.getElementById("display").value = a;
+}
+function Clear()
+{
+	a = Number.MIN_VALUE, b = Number.MIN_VALUE;	//Îïåğàíäû
+	operation = "";		//Sign - çíàê îïåğàöèè
+	input = false;
+	input_operation = false;
+	document.getElementById("display").value = "0";
 }
