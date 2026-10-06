@@ -2,6 +2,9 @@
 https://www.youtube.com/playlist?list=PLYdRabXTIiy0
 
 TODO:
+1. Реализовать кнопки 'SQRT' и '1/x';
+
+DONE:
 1. Обработать нажатие 'Backspace';
 
 DONE:
