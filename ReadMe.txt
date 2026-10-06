@@ -2,6 +2,9 @@
 https://www.youtube.com/playlist?list=PLYdRabXTIiy0
 
 TODO:
+1. Обработать нажатие 'Backspace';
+
+DONE:
 1. На отдельной ветке оптимизировать код таймера;
 
 DONE:
